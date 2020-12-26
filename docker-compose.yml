@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    volumes: 
+      - .:/var/www/test_go_docker/
+    command: "tail -f /dev/null"
+    expose:
+      - "8000"
